@@ -1,59 +1,58 @@
 import '../styles/earphones.scss'
 import BottomSection from "../components/bottomsection";
-import earPhoneImage from '../assets/category-earphones/desktop/image-yx1-earphones.jpg'
 import MenuSection from './menusection';
 import data from '../json/data.json'
 import { useEffect, useState } from 'react';
 import { useLocation,Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
-interface IncludedItem {
-    quantity: number;
-    item: string;
-  }
+// interface IncludedItem {
+//     quantity: number;
+//     item: string;
+//   }
   
-  interface Image {
-    mobile: string;
-    tablet: string;
-    desktop: string;
-  }
+//   interface Image {
+//     mobile: string;
+//     tablet: string;
+//     desktop: string;
+//   }
   
-  interface Gallery {
-    first: Image;
-    second: Image;
-    third: Image;
-  }
+//   interface Gallery {
+//     first: Image;
+//     second: Image;
+//     third: Image;
+//   }
   
-  interface OtherProduct {
-    slug: string;
-    name: string;
-    image: Image;
-  }
+//   interface OtherProduct {
+//     slug: string;
+//     name: string;
+//     image: Image;
+//   }
   
-  interface Product {
-    id: number;
-    slug: string;
-    name: string;
-    image: Image;
-    category: string;
-    new: boolean;
-    price: number;
-    description: string;
-    features: string;
-    includes: IncludedItem[];
-    gallery: Gallery;
-    others: OtherProduct[];
-  }
+//   interface Product {
+//     id: number;
+//     slug: string;
+//     name: string;
+//     image: Image;
+//     category: string;
+//     new: boolean;
+//     price: number;
+//     description: string;
+//     features: string;
+//     includes: IncludedItem[];
+//     gallery: Gallery;
+//     others: OtherProduct[];
+//   }
   
-  interface Category {
-    products: Product[];
-  }
+//   interface Category {
+//     products: Product[];
+//   }
   
-  interface Categories {
-    categories: {
-      [key: string]: Category;
-    };
-  }
+//   interface Categories {
+//     categories: {
+//       [key: string]: Category;
+//     };
+//   }
   
   type CategoryKey = 'speakers' | 'headphones' | 'earphones';
 
@@ -65,7 +64,7 @@ function EarphoneSection(){
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth); 
 
 
-    const categories = data.categories;
+    
     
     const categoriesData = data.categories
     // @ts-ignore

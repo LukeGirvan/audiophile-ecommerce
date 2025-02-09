@@ -3,19 +3,13 @@ import BottomSection from './bottomsection';
 import { useParams } from "react-router-dom";
 import data from '../json/data.json'
 import { Link, useLocation } from 'react-router-dom';
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import MenuSection from './menusection';
 import { useCart } from '../hooks/useCart';
 import {Alert, Snackbar} from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
-import {Product,ProductType} from '../types/productTypes'
+import {Product} from '../types/productTypes'
 
-
-type CategoriesType = {
-    [key: string]: {
-      products: ProductType[]; // Assuming ProductType is already defined
-    };
-  };
 
 function ProductContent(){
     const location = useLocation()

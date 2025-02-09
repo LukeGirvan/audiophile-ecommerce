@@ -2,7 +2,7 @@ import '../styles/checkout.scss'
 import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../hooks/useCart';
 import { CartItem } from '../types/cartTypes';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Footer from './footer';
 
 
@@ -44,7 +44,7 @@ function CheckoutForm(){
     const [hideROC, sethideROC] = useState(false)
     
    
-    const [formData, setFormData] =useState({
+    const [formData, setFormData] =useState<FormData>({
         name:"",
         email:"",
         phoneNum:"",
@@ -56,54 +56,54 @@ function CheckoutForm(){
         eMoneyPin:"",
     })
 
-    const [formValidations, setFormValidations] =useState<Validations>({
-        name:{
+    const formValidations = useMemo<Validations>(() => ({
+        name: {
             selector: '.name-input',
             pattern: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžæÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/,
             errorClass: '.name-error',
         },
-        email:{
+        email: {
             selector: '.email-input',
             pattern: /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,4}$/,
             errorClass: '.email-error',
         },
-        phoneNum:{
+        phoneNum: {
             selector: '.phone-input',
             pattern: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
             errorClass: '.phone-error',
         },
-        address:{
+        address: {
             selector: '.address-input',
             pattern: /\w+(\s\w+){2,}/,
             errorClass: '.address-error',
         },
-       zip: {
+        zip: {
             selector: '.zip-input',
             pattern: /^[0-9]{6}$/,
             errorClass: '.zip-error',
         },
-        city:{
+        city: {
             selector: '.city-input',
             pattern: /^[a-zA-Z]{1,20}\s?[a-zA-Z]{1,20}$/,
             errorClass: '.city-error',
         },
-        country:{
+        country: {
             selector: '.country-input',
             pattern: /^[a-zA-Z]{1,20}\s?[a-zA-Z]{1,20}$/,
             errorClass: '.country-error',
         },
-        eMoneyPin:{
+        eMoneyPin: {
             selector: '.e-money-pin-input',
             pattern: /^[0-9]{4}$/,
             errorClass: '.e-money-pin-error',
         },
-        eMoneyNum:{
+        eMoneyNum: {
             selector: '.e-money-num-input',
             pattern: /^[0-9]{9}$/,
             errorClass: '.e-money-num-error',
         }
+    }), []);
     
-    })
 
     const formChange = (e:React.ChangeEvent<HTMLInputElement>) => {
         const {name, value} = e.target;
@@ -111,7 +111,6 @@ function CheckoutForm(){
         setFormData((prev)=>({
             ...prev, [name]:value
         }))
-        console.log(formData)
         const errorSpan = document.querySelector(`${formValidations[name].errorClass}`) as HTMLSpanElement
         const currentInput = document.querySelector(`${formValidations[name].selector}`) as HTMLInputElement
 

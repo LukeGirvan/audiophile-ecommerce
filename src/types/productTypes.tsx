@@ -63,6 +63,8 @@ export interface ProductType{
 
 export interface Categories{
     productType:{
-        
+        product:{
+
+        }
     }
 }

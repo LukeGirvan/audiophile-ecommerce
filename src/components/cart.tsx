@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Cart(){
 
-    const {hideCart,cartVisible, clearCart, items, getItemQuantity, addItem, increaseQuantity, decreaseQuantity, totalPrice} = useCart()
+    const {hideCart,cartVisible, clearCart, items, increaseQuantity, decreaseQuantity, totalPrice} = useCart()
 
     const location = useLocation()
     const add = (e:React.MouseEvent<HTMLAnchorElement>) =>{

@@ -9,24 +9,20 @@ function HomeContent(){
 
     const [speakerImageSrc, setSpeakerImageSrc] = useState<string>('')
     const [earphoneImageSrc, setEarphoneImageSrc] = useState<string>('')
-    const [humanImageSrc, setHumanImageSrc] = useState<string>('')
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth); // Track window width
 
     function changeImages(screenWidth:number){
         if(screenWidth >= 1200){
             setSpeakerImageSrc('src/assets/home/desktop/image-speaker-zx9.png')
             setEarphoneImageSrc('src/assets/home/desktop/image-earphones-yx1.jpg')
-            setHumanImageSrc('src/assets/shared/desktop/image-best-gear.jpg')
         }
         if(screenWidth >= 768 && screenWidth <1200){
             setSpeakerImageSrc('src/assets/home/tablet/image-speakers-zx9.png')
             setEarphoneImageSrc('src/assets/home/tablet/image-earphones-yx1.jpg')
-            setHumanImageSrc('src/assets/shared/tablet/image-best-gear.jpg')
         }
         if(screenWidth < 768){
             setSpeakerImageSrc('src/assets/home/mobile/image-speakers-zx9.png')
             setEarphoneImageSrc('src/assets/home/mobile/image-earphones-yx1.jpg')
-            setHumanImageSrc('src/assets/shared/mobile/image-best-gear.jpg')
         }
     }
 

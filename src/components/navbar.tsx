@@ -3,7 +3,7 @@ import '../styles/navbar.scss'
 import cart from '../assets/shared/desktop/icon-cart.svg'
 import hamburger from '../assets/shared/tablet/icon-hamburger.svg'
 import { Link, useLocation } from 'react-router-dom'
-import { useContext, useEffect, useState } from 'react'
+import {  useEffect, useState } from 'react'
 import { useCart } from '../hooks/useCart'
 import Cart from './cart'
 import MobileMenu from './mobilemenu'
@@ -12,7 +12,7 @@ import MobileMenu from './mobilemenu'
 function Navbar(){
 
     const [menuShown, setMenuShown] = useState(false);
-    const {showCart, getTotalQuantity, items, hideCart, cartVisible } = useCart()
+    const {showCart, getTotalQuantity } = useCart()
     const location = useLocation()
     const quantity = getTotalQuantity()
 

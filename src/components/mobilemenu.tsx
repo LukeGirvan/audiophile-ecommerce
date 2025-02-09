@@ -1,6 +1,5 @@
 import MenuSection from "./menusection";
 import '../styles/mobilemenu.scss'
-import { useEffect, useState } from "react";
 
 interface MobileProps {
     display:boolean;
