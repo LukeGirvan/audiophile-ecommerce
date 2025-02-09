@@ -1,0 +1,54 @@
+.button1{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #D87D4A;
+    color: white;
+    max-width: fit-content;
+    font-weight: 300;
+}
+.button1.full-width{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 300;
+    max-width: 100%;
+    width: 100%;
+}
+.button1:hover{
+    cursor: pointer;
+    background-color: #FBAF85;
+}
+.button2{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #111111;
+    color: white;
+    max-width: fit-content;
+    font-weight: 300;
+}
+.button2:hover{
+    cursor: pointer;
+    background-color: #2f2f2f;;
+}
+.button3{
+    padding: 1rem 2rem;
+    border: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    max-width: fit-content;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+.button3:hover{
+    cursor: pointer;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+body.scroll-lock{
+    overflow:hidden;
+    height: 100vh;
+}

@@ -1,0 +1,570 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif;
+
+}
+
+@import 'mixinstyles';
+
+@media (min-width:1200px) {
+    .hero-section{
+        color:white;
+        height: 119vh;
+        background:url('../assets/home/desktop/image-hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 235%;
+        width: 100%;
+        @include
+        center-flex-column();
+        align-items: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 10rem;
+        .top-content{
+         
+            width:78%;
+            display: flex;
+            flex-direction: column;
+            
+            .sub-title{
+                width: fit-content;
+                font-size: 1rem;
+                letter-spacing: 8px;
+                font-weight: 100;
+                color: rgb(134, 133, 133);
+            }
+            .big-title{
+                font-size: 3.5rem;
+                margin-top: 0;
+                max-width: 40%;
+                margin: 0;
+            }
+            .details-paragraph{
+                max-width: 33%;
+                line-height: 2;
+                margin-bottom:3rem;
+            }
+            
+        }
+    }
+    .middle-section{
+        width: 100%;
+        height: 100%;
+        @include
+        center-flex-column();
+        align-items: center;
+        
+       
+        .zx9-speaker-call-to-action{
+            width: 80%;
+            background-color: #D87D4A;
+            height: 80vh;
+            margin-bottom: 3rem;
+            border-radius: 10px;
+            background-size: cover;
+            color: white;
+            @include
+            center-flex-column();
+            align-items: center;
+            overflow: hidden;
+            .div-with-background{
+                background: url('src/assets/home/desktop/pattern-circles.svg');
+                background-repeat: no-repeat;
+                background-position: 48% -16.5rem;
+                @include
+                center-flex-column();
+                align-items: center;
+                width: 100%;
+                height:100%;.speaker-content{
+                    width: 80%;
+                    height: 100%;
+                    @include
+                    center-flex-row();
+                    justify-content: space-evenly;
+                    gap:6rem;
+                    align-items: center;
+                    position: relative;
+                    .circle-pattern{
+                        position: absolute;
+                        top: 0;
+                        right:25%
+        
+                    }
+                    .call-to-action{
+                        width: 50%;
+                        @include
+                        center-flex-column();
+                        position: relative;
+                        z-index: 7;
+                       .product-description{
+                        max-width: 75%;
+                        line-height: 2;
+                        margin-bottom: 2rem;
+                       
+                       }
+                       .big-title{
+                        max-width: 40%;
+                        font-size: 3.5rem;
+                        margin-bottom: 0;
+                        line-height: 1;
+                    }
+                    }
+                    
+                    .speaker-big{
+                        margin-top: 8rem;
+                        height: 80%;
+                        width: 40%;
+                        position: relative;
+                        z-index: 7;
+                        max-width: 350px;
+                    }
+                   }
+            }
+        }
+
+        .zx7-speaker-call-to-action{
+            width: 80%;
+            background: url('../assets/home/desktop/image-speaker-zx7.jpg');
+            height:45.6vh;
+            margin-bottom: 3rem;
+            border-radius: 10px;
+            background-size: cover;
+            // @include
+            // center-flex-column();
+            // align-items: center;
+            overflow: hidden;
+           .speaker-content{
+            
+            height: 92%;
+            @include
+            center-flex-row();
+            justify-content: flex-start;
+            align-items: center;
+            gap:5rem;
+            align-items: center;
+            .call-to-action{
+                width: 50%;
+                @include
+                center-flex-column();
+               
+            }
+            .big-title{
+             
+                font-size: 2rem;
+            }
+            
+           }
+        }
+
+
+        .earphone-call-to-action{
+            height: 46vh;
+            width: 80%;
+            margin-bottom: 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap:2rem;
+
+            .earphones-cta, .earphone-details{
+                width: 50%;
+                height: 100%;
+                border-radius: 10px;
+                
+            }
+            .earphone-details{
+                background-color: #F1F1F1;
+                @include
+                center-flex-column();
+                align-items: center;
+                .details{
+                   height: 50%;
+                   
+                }
+            }
+        }
+
+
+        
+    }
+}
+
+
+@media (min-width:769px)and (max-width:1200px) {
+    .hero-section{
+        color:white;
+        height:120vh;
+        background:url('../assets/home/tablet/image-header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%  70%;
+        padding: 5rem 0rem;
+        width: 100%;
+        @include
+        center-flex-column();
+        align-items: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 10rem;
+        min-height: 700px;
+        .top-content{
+            @include
+            center-flex-column();
+            align-items: center;
+            height: 80%;
+         
+          
+            .sub-title{
+                font-size: 1.7rem;
+                letter-spacing: 3px;
+                font-weight: 100;
+                color: rgb(134, 133, 133);
+            }
+            .big-title{
+                font-size: 3.5rem;
+                margin-top: 0;
+                max-width: 60%;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            .details-paragraph{
+                max-width: 50%;
+                line-height: 2;
+                margin-bottom:3rem;
+                text-align: center;
+            }
+            
+        }
+    }
+
+    .middle-section{
+        width: 100%;
+        @include
+        center-flex-column();
+        align-items: center;
+        
+        .zx9-speaker-call-to-action{
+            width: 90%;
+            background-color: #D87D4A;
+            height: 100vh;
+            min-height: 600px;
+            margin-bottom: 3rem;
+            border-radius: 10px;
+            color: white;
+        //    padding: 2rem;
+            overflow: hidden;
+            // box-sizing: border-box;
+            .div-with-background{
+                background: url('src/assets/home/desktop/pattern-circles.svg');
+                background-repeat: no-repeat;
+                background-position: 48% -13.5rem;
+                @include
+                center-flex-column();
+                align-items: center;
+                width: 100%;
+                height:100%;
+                .speaker-content{
+                    width: 80%;
+                    height: 80%;
+                    @include
+                    center-flex-column();
+                    align-items: center;
+                   
+                    position: relative;
+        
+                    .circle-pattern{
+                        position: absolute;
+                        top: -28%;
+                        right: -15%;
+        
+                    }
+                    .call-to-action{
+                        width: 50%;
+                        @include
+                        center-flex-column();
+                        align-items: center;
+                        z-index: 3;
+                    }
+                    .big-title{
+                        max-width: 65%;
+                        margin-bottom: .8rem;
+                        font-size: 3.5rem;
+                        text-align: center;
+                    }
+                    .product-description{
+                        text-align: center;
+                        margin-bottom: 2.6rem;
+                    }
+                    .speaker-big{
+                        height: 40%;
+                        content: url('../assets/home/tablet/image-speaker-zx9.png');
+                        z-index: 4;
+                        max-width: 350px;
+                    }
+                   }
+            }
+        }
+
+        .zx7-speaker-call-to-action{
+            width: 90%;
+            background: url('../assets/home/tablet/image-speaker-zx7.jpg');
+            height:60vh;
+            margin-bottom: 10rem;
+            border-radius: 10px;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            // @include
+            // center-flex-column();
+            // align-items: center;
+            overflow: hidden;
+           .speaker-content{
+            position: relative;
+
+            height: 92%;
+            @include
+            center-flex-row();
+            justify-content: flex-start;
+            align-items: center;
+            gap:5rem;
+            align-items: center;
+            .call-to-action{
+                width: 50%;
+                @include
+                center-flex-column();
+               
+            }
+            .big-title{
+             
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+           }
+        }
+
+        .earphone-call-to-action{
+            
+            width: 90%;
+            margin-bottom: 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap:2rem;
+            height: 350px;
+            .earphones-cta, .earphone-details{
+                width: 50%;
+                height: 100%;
+                border-radius: 10px;
+                
+            }
+            .earphone-details{
+                background-color: #F1F1F1;
+                @include
+                center-flex-column();
+                align-items: center;
+                min-height: 250px;
+                .details{
+                   height: 50%;
+                   
+                }
+            }
+        }
+
+        
+
+
+
+    }
+
+
+
+}
+
+@media(max-width:769px) {
+    .hero-section{
+        color: white;
+        height: 80vh;
+        background: url(/src/assets/home/mobile/image-header.jpg);
+        background-size: cover;
+        background-position: 50% 70%;
+        width: 100%;
+        display: flex;
+        background-repeat: no-repeat;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 10rem;
+        box-sizing: border-box;
+        min-height: 850px;
+        .top-content{
+         
+            @include
+            center-flex-column();
+            align-items: center;
+           
+            .sub-title{
+                font-size: 1rem;
+                letter-spacing: 8px;
+                font-weight: 100;
+                color: rgb(134, 133, 133);
+                margin:4rem 0 0 0 ;
+            }
+            .big-title{
+                font-size: 2rem;
+                margin-top: 0;
+                max-width: 60%;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            .details-paragraph{
+                max-width: 75%;
+                line-height: 2;
+                text-align: center;
+            }
+            
+        }
+    }
+
+
+
+    .middle-section{
+        width: 100%;
+        height: 100%;
+        @include
+        center-flex-column();
+        align-items: center;
+        margin-top:8rem;
+        
+
+        .zx9-speaker-call-to-action{
+            width: 90%;
+            background-color: #D87D4A;
+            height: 90vh;
+            margin-bottom: 3rem;
+            border-radius: 10px;
+            color: white;
+            
+            overflow: hidden;
+            min-height: 400px;
+           .div-with-background{
+            background: url('src/assets/home/desktop/pattern-circles.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% -8.5rem;
+            @include
+            center-flex-column();
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            .speaker-content{
+                width: 80%;
+                height: 80%;
+                @include
+                center-flex-column();
+                align-items: center;
+                position: relative;
+                .circle-pattern{
+                    position: absolute;
+                    top: -50;
+                    left:-100%;
+                }
+                .call-to-action{
+                    // width: 50%;
+                    @include
+                    center-flex-column();
+                    align-items: center;
+                    z-index: 3;
+                }
+                .big-title{
+                    margin-bottom: .8rem;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .product-description{
+                    text-align: center;
+                    margin-bottom: 2.6rem;
+                }
+                .speaker-big{
+                    height: 29%;
+                    content: url('../assets/home/mobile/image-speaker-zx9.png');
+                    z-index: 3;
+                    max-width: 350px;
+                }
+               }
+           }
+        }
+
+
+        .zx7-speaker-call-to-action{
+            width: 90%;
+            background: url('../assets/home/mobile/image-speaker-zx7.jpg');
+            height:60vh;
+            margin-bottom: 5rem;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: 80% 41%;
+            color: rgb(0, 0, 0);
+            @include
+            center-flex-column();
+            // align-items: center;
+            overflow: hidden;
+           .speaker-content{
+            @include
+            center-flex-column();
+            justify-content: flex-start;
+            height: 50%;
+            .call-to-action{
+                height: fit-content;
+                @include
+                center-flex-column();
+               padding-left: 1rem;
+            }
+            .big-title{
+                width:fit-content;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+           }
+        }
+
+        .earphone-call-to-action{
+            // height: 75vh;
+            width: 90%;
+            margin-bottom: 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap:2rem;
+            @include
+            center-flex-column();
+            .earphones-cta, .earphone-details{
+                width: 100%;
+                height: 50%;
+                border-radius: 10px;
+                
+            }
+            .earphone-details{
+                background-color: #F1F1F1;
+                @include
+                center-flex-column();
+                align-items: center;
+                min-height: 200px;
+                .details{
+                   height: 50%;
+                   @include
+                   center-flex-column();
+                   align-items: center;
+                }
+            }
+        }
+
+        
+
+    }
+}

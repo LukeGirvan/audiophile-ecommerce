@@ -1,0 +1,138 @@
+.fade-in{
+    animation: 0.3s fadeIn ease-in-out;
+}
+.fade-out{
+    animation: 0.3s fadeOut ease-in-out;
+}
+
+ @keyframes  slide-down{
+    from {display: none;
+
+        transform: translateY(-150%);
+        
+      }
+      to {
+        display: flex;
+        transform: translateY(0);
+       
+      }
+}
+@keyframes  slide-up{
+    from {
+        transform: translateY(0);
+        display: flex;
+      }
+      to {
+        transform: translateY(-150%);
+        display: none;
+      }
+}
+
+.slide-up{
+    animation: slide-up 300ms ease-in-out forwards;
+}
+.slide-down{
+    animation: slide-down 300ms ease-in-out forwards;
+}
+
+@media (min-width:1200px)  {
+    .white-modal{
+        display: none;
+    }
+.blur-modal{
+    display: none;
+}
+}
+
+
+
+@media (min-width:769px)and (max-width:1200px) {
+    .white-modal{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        
+        height: 380px;
+        z-index: 701;
+        padding: 10rem 0;
+        box-sizing: border-box;
+        overflow: auto;
+        .menu-section{
+            margin:3rem;
+        }
+    }
+    .blur-modal{
+            
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 100px;
+            background:hsla(0, 0%, 9%, 0.8);
+            z-index: 700;
+            overflow: auto;
+            padding-bottom: 10rem;
+            box-sizing: border-box;
+
+    }
+
+    .white-modal.hidden{
+        display: none;
+        
+    }
+    .blur-modal.hidden{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .scroll-modal{
+        overflow: auto;
+        .white-modal{      
+            justify-content: center;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 100%;
+            max-height: 90%;
+            background-color: white;
+            position: absolute;
+            top: 100px;
+            z-index: 700;
+            overflow: auto;
+            box-sizing: border-box;
+            .menu-section{
+                margin: 7rem 0 7rem 0  ;
+                position: relative;
+                z-index: 701;
+            }
+        }
+    }
+    .blur-modal{
+            
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 70%;
+            background:hsla(0, 0%, 9%, 0.8);
+            z-index: 699;
+            overflow: auto;
+            padding-bottom: 10rem;
+            box-sizing: border-box;
+        
+    }
+    .white-modal.hidden{
+        display: none;
+    }
+    .blur-modal.hidden{
+        display: none;
+    }
+}
