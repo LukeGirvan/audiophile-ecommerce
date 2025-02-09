@@ -12,7 +12,7 @@ body{
     .hero-section{
         color:white;
         height: 119vh;
-        background:url('../assets/home/desktop/image-hero.jpg');
+        background:url('/assets/home/desktop/image-hero.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 235%;
@@ -127,7 +127,7 @@ body{
 
         .zx7-speaker-call-to-action{
             width: 80%;
-            background: url('../assets/home/desktop/image-speaker-zx7.jpg');
+            background: url('/assets/home/desktop/image-speaker-zx7.jpg');
             height:45.6vh;
             margin-bottom: 3rem;
             border-radius: 10px;
@@ -197,7 +197,7 @@ body{
     .hero-section{
         color:white;
         height:120vh;
-        background:url('../assets/home/tablet/image-header.jpg');
+        background:url('/assets/home/tablet/image-header.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50%  70%;
@@ -300,7 +300,7 @@ body{
                     }
                     .speaker-big{
                         height: 40%;
-                        content: url('../assets/home/tablet/image-speaker-zx9.png');
+                        
                         z-index: 4;
                         max-width: 350px;
                     }
@@ -310,7 +310,7 @@ body{
 
         .zx7-speaker-call-to-action{
             width: 90%;
-            background: url('../assets/home/tablet/image-speaker-zx7.jpg');
+            background: url('/assets/home/tablet/image-speaker-zx7.jpg');
             height:60vh;
             margin-bottom: 10rem;
             border-radius: 10px;
@@ -387,7 +387,7 @@ body{
     .hero-section{
         color: white;
         height: 80vh;
-        background: url(//assets/home/mobile/image-header.jpg);
+        background: url('/assets/home/mobile/image-header.jpg');
         background-size: cover;
         background-position: 50% 70%;
         width: 100%;
@@ -491,7 +491,7 @@ body{
                 }
                 .speaker-big{
                     height: 29%;
-                    content: url('../assets/home/mobile/image-speaker-zx9.png');
+                   
                     z-index: 3;
                     max-width: 350px;
                 }
@@ -502,7 +502,7 @@ body{
 
         .zx7-speaker-call-to-action{
             width: 90%;
-            background: url('../assets/home/mobile/image-speaker-zx7.jpg');
+            background: url('/assets/home/mobile/image-speaker-zx7.jpg');
             height:60vh;
             margin-bottom: 5rem;
             border-radius: 10px;

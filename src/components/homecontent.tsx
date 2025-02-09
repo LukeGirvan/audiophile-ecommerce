@@ -13,16 +13,16 @@ function HomeContent(){
 
     function changeImages(screenWidth:number){
         if(screenWidth >= 1200){
-            setSpeakerImageSrc('/assets/home/desktop/image-speaker-zx9.png')
-            setEarphoneImageSrc('/assets/home/desktop/image-earphones-yx1.jpg')
+            setSpeakerImageSrc('assets/home/desktop/image-speaker-zx9.png')
+            setEarphoneImageSrc('assets/home/desktop/image-earphones-yx1.jpg')
         }
         if(screenWidth >= 768 && screenWidth <1200){
-            setSpeakerImageSrc('/assets/home/tablet/image-speaker-zx9.png')
-            setEarphoneImageSrc('/assets/home/tablet/image-earphones-yx1.jpg')
+            setSpeakerImageSrc('assets/home/tablet/image-speaker-zx9.png')
+            setEarphoneImageSrc('assets/home/tablet/image-earphones-yx1.jpg')
         }
         if(screenWidth < 768){
-            setSpeakerImageSrc('/assets/home/mobile/image-speaker-zx9.png')
-            setEarphoneImageSrc('/assets/home/mobile/image-earphones-yx1.jpg')
+            setSpeakerImageSrc('assets/home/mobile/image-speaker-zx9.png')
+            setEarphoneImageSrc('assets/home/mobile/image-earphones-yx1.jpg')
         }
     }
 
