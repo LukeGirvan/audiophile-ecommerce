@@ -11,15 +11,15 @@ function About(){
     function changeImages(screenWidth:number){
         if(screenWidth >= 1200){
           
-            setHumanImageSrc('src/assets/shared/desktop/image-best-gear.jpg')
+            setHumanImageSrc('/assets/shared/desktop/image-best-gear.jpg')
         }
         if(screenWidth >= 768 && screenWidth <1200){
            
-            setHumanImageSrc('src/assets/shared/tablet/image-best-gear.jpg')
+            setHumanImageSrc('/assets/shared/tablet/image-best-gear.jpg')
         }
         if(screenWidth < 768){
             
-            setHumanImageSrc('src/assets/shared/mobile/image-best-gear.jpg')
+            setHumanImageSrc('/assets/shared/mobile/image-best-gear.jpg')
         }
     }
 

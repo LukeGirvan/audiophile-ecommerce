@@ -1,9 +1,9 @@
-import logo from '../assets/shared/desktop/logo.svg'
+import logo from '/assets/shared/desktop/logo.svg'
 import '../styles/footer.scss'
 import { Link} from 'react-router-dom'
-import twitterLogo from "../assets/shared/desktop/icon-twitter.svg"
-import facebookLogo from "../assets/shared/desktop/icon-facebook.svg"
-import instaLogo from "../assets/shared/desktop/icon-instagram.svg"
+import twitterLogo from "/assets/shared/desktop/icon-twitter.svg"
+import facebookLogo from "/assets/shared/desktop/icon-facebook.svg"
+import instaLogo from "/assets/shared/desktop/icon-instagram.svg"
 
 function Footer(){
     return(<>

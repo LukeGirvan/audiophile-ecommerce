@@ -211,7 +211,7 @@ function CheckoutForm(){
         <div className="modal-wrapper">
             <div className= {`checkout-modal ${showModal ? '' : 'hide'}`}>
                 <div className="checkout-modal-content">
-                    <img src='src/assets/shared/desktop/icon-check-mark.svg' alt="" className='checkmark' />
+                    <img src='/assets/shared/desktop/icon-check-mark.svg' alt="" className='checkmark' />
                     <h2 className="thank-you">
                         THANK YOU
                     </h2>
