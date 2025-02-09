@@ -1,5 +1,6 @@
 {
   "name": "audiophile-ecommerce",
+  "homepage": "https://lukegirvan.github.io/audiophile-ecommerce/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite --host",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -16,6 +19,7 @@
     "@mui/material": "^6.4.1",
     "@mui/styled-engine-sc": "^6.4.0",
     "@radix-ui/react-toast": "^1.2.5",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.5.1",
