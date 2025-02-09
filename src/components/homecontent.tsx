@@ -17,11 +17,11 @@ function HomeContent(){
             setEarphoneImageSrc('src/assets/home/desktop/image-earphones-yx1.jpg')
         }
         if(screenWidth >= 768 && screenWidth <1200){
-            setSpeakerImageSrc('src/assets/home/tablet/image-speakers-zx9.png')
+            setSpeakerImageSrc('src/assets/home/tablet/image-speaker-zx9.png')
             setEarphoneImageSrc('src/assets/home/tablet/image-earphones-yx1.jpg')
         }
         if(screenWidth < 768){
-            setSpeakerImageSrc('src/assets/home/mobile/image-speakers-zx9.png')
+            setSpeakerImageSrc('src/assets/home/mobile/image-speaker-zx9.png')
             setEarphoneImageSrc('src/assets/home/mobile/image-earphones-yx1.jpg')
         }
     }
