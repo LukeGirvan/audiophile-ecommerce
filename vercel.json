@@ -1,13 +1,13 @@
 {
   "rewrites": [
     {
-      "source": "/audiophile-ecommerce/(.*)",
+      "src": "/audiophile-ecommerce/(.*)",
       "destination": "/audiophile-ecommerce/index.html"
     }
   ],
   "redirects": [
     {
-      "source": "/assets/(.*)",
+      "src": "/assets/(.*)",
       "destination": "/audiophile-ecommerce/assets/$1",
       "permanent": true
     }
