@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/audiophile-ecommerce/(.*)",
-      "destination": "/audiophile-ecommerce/index.html"
+      "destination": "/index.html"
     }
   ]
 }
