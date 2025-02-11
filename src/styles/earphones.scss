@@ -1,4 +1,4 @@
-@import 'mixinstyles';
+@use 'mixinstyles' as mixin;
 
 
 
@@ -30,8 +30,7 @@
         .wrapper#products{
             height: 100%;
             width: 100%;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             
             .label{
@@ -39,8 +38,7 @@
                 width:100%;
                 background-color: black;
                 min-height:100px;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 h1{
                     text-align: center;
                     margin-top: 0;
@@ -100,16 +98,14 @@
     .wrapper#products{
         height: 100%;
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         .label{
             height: 20vh;
             width:100%;
             min-height:100px;
             background-color: black;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             h1{
                 text-align: center;
                 margin-top: 0;
@@ -120,8 +116,7 @@
         .product-section{
             width: 90%;
     
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             margin-bottom: 10rem;
             .product-image{
@@ -133,8 +128,7 @@
                 }
             }
             .product-details{
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 .sub-title{
                     font-size: .8rem;
@@ -162,15 +156,13 @@
     .wrapper#products{
         height: 100%;
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         .label{
             height: 20vh;
             width:100%;
             background-color: black;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             min-height:100px;
             h1{
                 text-align: center;
@@ -182,8 +174,7 @@
         .product-section{
             width: 80%;
     
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             margin-bottom: 10rem;
             .product-image{
@@ -196,8 +187,7 @@
             }
             .product-details{
                 
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 .sub-title{
                     font-size: .8rem;

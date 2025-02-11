@@ -131,8 +131,8 @@ function ProductContent(){
             $ {productInfo[0].price.toLocaleString()}
         </p>
         <div className="add-to-cart">
-          <div className="quantity">
-            <a  className="minus" onClick={subtractQuantity}>-</a> {quantity} <a  className="add" onClick={addQuantity}>+</a>
+          <div className="choose-quantity">
+            <a  className="minus" onClick={subtractQuantity}>-</a> <span className="quantity">{quantity}</span> <a  className="add" onClick={addQuantity}>+</a>
             </div>  
             <button className="button1" onClick={createItem}>ADD TO CART</button>
         </div>

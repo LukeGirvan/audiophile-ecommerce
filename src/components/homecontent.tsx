@@ -85,7 +85,10 @@ function HomeContent(){
             <div className="zx9-speaker-call-to-action">
                 <div className="div-with-background">
                 <div className="speaker-content">
+                    <div className="speaker-image-holder">
                     <img src={speakerImageSrc} alt="image of zx9 speaker" className='speaker-big'/>
+
+                    </div>
                     <div className="call-to-action">
                         <h1 className="big-title">
                             ZX9 SPEAKER

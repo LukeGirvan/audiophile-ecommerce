@@ -1,4 +1,4 @@
-@import 'mixinstyles';
+@use 'mixinstyles' as mixin;
 
 @keyframes fadeIn {
     from{
@@ -91,8 +91,7 @@
                     border-radius: 10px
                 }
                 .product-details{
-                    @include
-                    center-flex-column();
+                    @include mixin.center-flex-column();
                     margin-left:1rem;
                     .product-title{
                         margin:0;
@@ -219,8 +218,7 @@
                     border-radius: 10px
                 }
                 .product-details{
-                    @include
-                    center-flex-column();
+                    @include mixin.center-flex-column();
                     margin-left:1rem;
                     .product-title{
                         margin:0;
@@ -366,8 +364,7 @@
                         border-radius: 10px
                     }
                     .product-details{
-                        @include
-                        center-flex-column();
+                        @include mixin.center-flex-column();
                         margin-left:1rem;
                         .product-title{
                             margin:0;

@@ -1,24 +1,27 @@
 
+@use 'mixinstyles' as mixin;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 
 body{
     font-family: 'Manrope', sans-serif;
 
 }
 
-@import 'mixinstyles';
+
 
 @media (min-width:1200px) {
     .hero-section{
         color:white;
-        height: 119vh;
+        height: 100vh;
         background:url('/assets/home/desktop/image-hero.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 50% 235%;
+        background-position: center center;
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -53,8 +56,7 @@ body{
     .middle-section{
         width: 100%;
         height: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         
        
@@ -66,27 +68,43 @@ body{
             border-radius: 10px;
             background-size: cover;
             color: white;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             overflow: hidden;
             .div-with-background{
                 background: url('/assets/home/desktop/pattern-circles.svg');
                 background-repeat: no-repeat;
-                background-position: 48% -16.5rem;
-                @include
-                center-flex-column();
+                background-position: top left;
+                @include mixin.center-flex-column();
                 align-items: center;
                 width: 100%;
-                height:100%;.speaker-content{
+                height:100%;
+                .speaker-content{
                     width: 80%;
                     height: 100%;
-                    @include
-                    center-flex-row();
+                    @include mixin.center-flex-row();
                     justify-content: space-evenly;
                     gap:6rem;
                     align-items: center;
                     position: relative;
+                    .speaker-image-holder{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        margin-top: 1.6rem;
+                    .speaker-big{
+                        margin-top: 8rem;
+                        height:80%;
+                        max-height: 525px;
+                        width: 100%;
+                        position: relative;
+                        z-index: 7;
+                        max-width: 350px;
+                        min-width: 280px;
+                    }
+                    }
                     .circle-pattern{
                         position: absolute;
                         top: 0;
@@ -95,8 +113,7 @@ body{
                     }
                     .call-to-action{
                         width: 50%;
-                        @include
-                        center-flex-column();
+                        @include mixin.center-flex-column();
                         position: relative;
                         z-index: 7;
                        .product-description{
@@ -113,14 +130,6 @@ body{
                     }
                     }
                     
-                    .speaker-big{
-                        margin-top: 8rem;
-                        height: 80%;
-                        width: 40%;
-                        position: relative;
-                        z-index: 7;
-                        max-width: 350px;
-                    }
                    }
             }
         }
@@ -139,16 +148,14 @@ body{
            .speaker-content{
             
             height: 92%;
-            @include
-            center-flex-row();
+            @include mixin.center-flex-row();
             justify-content: flex-start;
             align-items: center;
             gap:5rem;
             align-items: center;
             .call-to-action{
                 width: 50%;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                
             }
             .big-title{
@@ -177,8 +184,7 @@ body{
             }
             .earphone-details{
                 background-color: #F1F1F1;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 .details{
                    height: 50%;
@@ -203,16 +209,14 @@ body{
         background-position: 50%  70%;
         padding: 5rem 0rem;
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         margin-bottom: 10rem;
         min-height: 700px;
         .top-content{
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             height: 80%;
          
@@ -242,8 +246,7 @@ body{
 
     .middle-section{
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         
         .zx9-speaker-call-to-action{
@@ -261,20 +264,27 @@ body{
                 background: url('/assets/home/desktop/pattern-circles.svg');
                 background-repeat: no-repeat;
                 background-position: 48% -13.5rem;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 width: 100%;
                 height:100%;
                 .speaker-content{
                     width: 80%;
                     height: 80%;
-                    @include
-                    center-flex-column();
+                    @include mixin.center-flex-column();
                     align-items: center;
                    
                     position: relative;
-        
+                    
+                    .speaker-image-holder{
+                        height: 30%;
+                        .speaker-big{
+                            height: 100%;
+                            min-width: 140px;
+                            z-index: 4;
+                            max-width: 350px;
+                        }
+                    }
                     .circle-pattern{
                         position: absolute;
                         top: -28%;
@@ -282,14 +292,14 @@ body{
         
                     }
                     .call-to-action{
-                        width: 50%;
-                        @include
-                        center-flex-column();
+                        width: 70%;
+                        @include mixin.center-flex-column();
                         align-items: center;
                         z-index: 3;
                     }
                     .big-title{
-                        max-width: 65%;
+                        // max-width: 65%;
+                        width: 70%;
                         margin-bottom: .8rem;
                         font-size: 3.5rem;
                         text-align: center;
@@ -297,13 +307,9 @@ body{
                     .product-description{
                         text-align: center;
                         margin-bottom: 2.6rem;
+                        width: 70%;
                     }
-                    .speaker-big{
-                        height: 40%;
-                        
-                        z-index: 4;
-                        max-width: 350px;
-                    }
+                    
                    }
             }
         }
@@ -324,16 +330,14 @@ body{
             position: relative;
 
             height: 92%;
-            @include
-            center-flex-row();
+            @include mixin.center-flex-row();
             justify-content: flex-start;
             align-items: center;
             gap:5rem;
             align-items: center;
             .call-to-action{
                 width: 50%;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                
             }
             .big-title{
@@ -362,8 +366,7 @@ body{
             }
             .earphone-details{
                 background-color: #F1F1F1;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 min-height: 250px;
                 .details{
@@ -402,9 +405,7 @@ body{
         box-sizing: border-box;
         min-height: 850px;
         .top-content{
-         
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
            
             .sub-title{
@@ -435,8 +436,7 @@ body{
     .middle-section{
         width: 100%;
         height: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         margin-top:8rem;
         
@@ -456,27 +456,33 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% -8.5rem;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             width: 100%;
             height: 100%;
             .speaker-content{
                 width: 80%;
                 height: 80%;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 position: relative;
+                .speaker-image-holder{
+                    height:35%;
+
+                    .speaker-big{
+                        height: 100%;
+                       
+                        z-index: 3;
+                        max-width: 350px;
+                    }
+                }
                 .circle-pattern{
                     position: absolute;
                     top: -50;
                     left:-100%;
                 }
                 .call-to-action{
-                    // width: 50%;
-                    @include
-                    center-flex-column();
+                    @include mixin.center-flex-column();
                     align-items: center;
                     z-index: 3;
                 }
@@ -484,17 +490,13 @@ body{
                     margin-bottom: .8rem;
                     font-size: 2rem;
                     text-align: center;
+                    width: 70%;
                 }
                 .product-description{
                     text-align: center;
                     margin-bottom: 2.6rem;
                 }
-                .speaker-big{
-                    height: 29%;
-                   
-                    z-index: 3;
-                    max-width: 350px;
-                }
+               
                }
            }
         }
@@ -509,19 +511,16 @@ body{
             background-size: cover;
             background-position: 80% 41%;
             color: rgb(0, 0, 0);
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             // align-items: center;
             overflow: hidden;
            .speaker-content{
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             justify-content: flex-start;
             height: 50%;
             .call-to-action{
                 height: fit-content;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                padding-left: 1rem;
             }
             .big-title{
@@ -541,8 +540,7 @@ body{
             flex-direction: row;
             justify-content: space-between;
             gap:2rem;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             .earphones-cta, .earphone-details{
                 width: 100%;
                 height: 50%;
@@ -551,14 +549,12 @@ body{
             }
             .earphone-details{
                 background-color: #F1F1F1;
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 min-height: 200px;
                 .details{
                    height: 50%;
-                   @include
-                   center-flex-column();
+                   @include mixin.center-flex-column();
                    align-items: center;
                 }
             }

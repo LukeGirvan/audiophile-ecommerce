@@ -1,11 +1,10 @@
 
-@import 'homecontent';
-
+@use 'homecontent';
+@use 'mixinstyles' as mixin;
 @media (min-width:1200px) {
     .about-us{
         width: 80%;
-        @include
-        center-flex-row();
+        @include mixin.center-flex-row();
         justify-content: space-between;
         gap: 3rem;
         margin-bottom: 10rem;
@@ -19,8 +18,7 @@
         .about-paragraph{
             width: 40%;
             line-height: 2;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
 
         }
     }
@@ -29,8 +27,7 @@
 @media(min-width:769px)and (max-width:1200px) {
     .about-us{
         width: 90%;
-        @include
-        center-flex-column-reverse();
+        @include mixin.center-flex-column-reverse();
         align-items: center;
         margin-bottom: 10rem;
         .orange-font{
@@ -53,8 +50,7 @@
 @media (max-width:768px) {
     .about-us{
         width: 90%;
-        @include
-        center-flex-column-reverse();
+        @include mixin.center-flex-column-reverse();
         align-items: center;
         margin-bottom: 10rem;
         .orange-font{

@@ -55,8 +55,8 @@
             .add-to-cart{
                 display: flex;
                 gap: 2rem;
-                .quantity{
-                    padding: 1rem 2rem;
+                .choose-quantity{
+                    // padding: 1rem 2rem;
                     border: none;
                     background-color: #cccccc;
                     font-weight: 300;
@@ -66,10 +66,19 @@
                     a.minus{
                         margin-right: 1rem;
                         cursor: pointer;
+                        padding:  1rem 1.5rem;;
+
                     }
                     a.add{
                         margin-left: 1rem;
                         cursor: pointer;
+                        padding: 1rem 1.5rem;
+                    }
+                    a.add:hover, a.minus:hover{
+                        background-color: darkgray;
+                    }
+                    span.quantity{
+                        padding: 1rem;
                     }
                 }
             }
@@ -249,8 +258,8 @@
     .add-to-cart{
         display: flex;
         gap: 2rem;
-        .quantity{
-            padding: 1rem 2rem;
+        .choose-quantity{
+            // padding: 1rem 2rem;
             border: none;
             background-color: #cccccc;
             font-weight: 300;
@@ -260,10 +269,15 @@
             a.minus{
                 margin-right: 1rem;
                 cursor: pointer;
+                padding: 1rem;
             }
             a.add{
                 margin-left: 1rem;
                 cursor: pointer;
+                padding: 1rem;
+            }
+            span.quantity{
+                padding: 1rem;
             }
         }
     }
@@ -412,8 +426,8 @@
             .add-to-cart{
                 display: flex;
                 gap: 2rem;
-                .quantity{
-                    padding: 1rem 2rem;
+                .choose-quantity{
+                    // padding: 1rem 2rem;
                     border: none;
                     background-color: #cccccc;
                     font-weight: 300;

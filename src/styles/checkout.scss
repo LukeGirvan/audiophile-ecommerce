@@ -1,4 +1,4 @@
-@import 'mixinstyles';
+@use 'mixinstyles' as mixin;
 
 
 body{
@@ -98,8 +98,7 @@ body{
                 .checkout-cart, .rest-of-cart{
                     background-color: rgb(221, 220, 220);
                     border-radius: 10px;
-                    @include
-                    center-flex-column();
+                    @include mixin.center-flex-column();
                     align-items: center;
                     .cart-item{
                         position: relative;
@@ -120,8 +119,7 @@ body{
                                 border-radius: 10px
                             }
                             .product-details{
-                                @include
-                                center-flex-column();
+                                @include mixin.center-flex-column();
                                 margin-left:1rem;
                                 .product-title{
                                     margin:0;
@@ -201,8 +199,7 @@ body{
 }
    .wrapper#checkout{
     width: 100%;
-    @include
-    center-flex-column();
+    @include mixin.center-flex-column();
     align-items: center;
     .go-back{
         margin:5rem 0rem;
@@ -218,8 +215,7 @@ body{
         width: 80%;
         margin-bottom: 10rem;
         box-sizing: border-box;
-        @include
-        center-flex-row();
+        @include mixin.center-flex-row();
         align-items: flex-start;
         gap:2rem;
         
@@ -419,8 +415,7 @@ body{
                             border-radius: 10px
                         }
                         .product-details{
-                            @include
-                            center-flex-column();
+                            @include mixin.center-flex-column();
                             margin-left:1rem;
                             .product-title{
                                 margin:0;
@@ -490,8 +485,7 @@ body{
 
     .wrapper#checkout{
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         .go-back{
             margin:5rem 0rem;
@@ -507,8 +501,7 @@ body{
             width: 90%;
             margin-bottom: 10rem;
             box-sizing: border-box;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: flex-start;
             gap:2rem;
             
@@ -709,8 +702,7 @@ body{
                                 border-radius: 10px
                             }
                             .product-details{
-                                @include
-                                center-flex-column();
+                                @include mixin.center-flex-column();
                                 margin-left:1rem;
                                 .product-title{
                                     margin:0;
@@ -812,8 +804,7 @@ body{
                     .checkout-cart, .rest-of-cart{
                         background-color: rgb(221, 220, 220);
                         border-radius: 10px;
-                        @include
-                        center-flex-column();
+                        @include mixin.center-flex-column();
                         align-items: center;
                         .cart-item{
                             position: relative;
@@ -834,8 +825,7 @@ body{
                                     border-radius: 10px
                                 }
                                 .product-details{
-                                    @include
-                                    center-flex-column();
+                                    @include mixin.center-flex-column();
                                     margin-left:1rem;
                                     .product-title{
                                         margin:0;
@@ -930,8 +920,7 @@ body{
 
     .wrapper#checkout{
         width: 100%;
-        @include
-        center-flex-column();
+        @include mixin.center-flex-column();
         align-items: center;
         .go-back{
             margin:5rem 0rem;
@@ -947,8 +936,8 @@ body{
             width: 80%;
             margin-bottom: 10rem;
             box-sizing: border-box;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
+            
             
             gap:2rem;
             
@@ -1148,8 +1137,7 @@ body{
                                 border-radius: 10px
                             }
                             .product-details{
-                                @include
-                                center-flex-column();
+                                @include mixin.center-flex-column();
                                 margin-left:1rem;
                                 .product-title{
                                     margin:0;
@@ -1256,8 +1244,7 @@ body{
                     .checkout-cart, .rest-of-cart{
                         background-color: rgb(221, 220, 220);
                         border-radius: 10px;
-                        @include
-                        center-flex-column();
+                        @include mixin.center-flex-column();
                         align-items: center;
                         width: 100%;
                         .cart-item{
@@ -1279,8 +1266,8 @@ body{
                                     border-radius: 10px
                                 }
                                 .product-details{
-                                    @include
-                                    center-flex-column();
+                                    @include mixin.center-flex-column();
+                                    
                                     margin-left:1rem;
                                     .product-title{
                                         margin:0;

@@ -1,10 +1,14 @@
+@use 'mixinstyles' as mixin;
+
+
+
 @mixin center-flex-row{
+
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-@import 'mixinstyles';
 
 
 @media (min-width:1200px) {
@@ -15,6 +19,7 @@
         flex-direction: column;
         align-items: center;
         background-color: #101010;
+        width: 100%;
         
         .nav-holder{
         width:80%;
@@ -62,11 +67,11 @@
             width: 101px;
         }
         .second-div{
-            @include
-            center-flex-row();
+            @include mixin.center-flex-row();
             align-items: center;
             color: #8a8989;
             width:80%;
+            margin-bottom: 2rem;
             .bio{
                 margin-bottom: 2rem;
                 max-width: 56%;
@@ -141,8 +146,7 @@
             width: 101px;
         }
         .second-div{
-            @include
-            center-flex-row();
+            @include mixin.center-flex-row();
             align-items: center;
             color: #8a8989;
             width:80%;
@@ -182,8 +186,7 @@
             .nav-holder{
             width:80%;
             height: 50%;
-            @include
-            center-flex-column();
+            @include mixin.center-flex-column();
             align-items: center;
             padding-top: 2rem;
             position: relative;
@@ -195,8 +198,7 @@
                 .nav-list{
                     color: white;
                     list-style: none;
-                    @include
-                    center-flex-column();
+                    @include mixin.center-flex-column();
                     align-items: center;
                     gap: 2rem;
                     margin:0;
@@ -234,8 +236,7 @@
             align-items: center;
             margin-bottom: 2rem;
             .text-holder{
-                @include
-                center-flex-column();
+                @include mixin.center-flex-column();
                 align-items: center;
                 .bio{
                     text-align: center;
