@@ -2,7 +2,14 @@
   "rewrites": [
     {
       "source": "/audiophile-ecommerce/(.*)",
-      "destination": "/index.html"
+      "destination": "/audiophile-ecommerce/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/assets/(.*)",
+      "destination": "/audiophile-ecommerce/assets/$1",
+      "permanent": true
     }
   ]
 }
